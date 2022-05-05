@@ -1,0 +1,84 @@
+.numberrow{
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+}
+
+#title{
+    text-align: center;
+    font-size: 50px;
+    color: blue;
+}
+
+#main {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: auto;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+#numbers {
+    flex: 3;
+}
+
+#operators {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#display {
+    background-color: lavender;
+    border: solid 2px slateblue;
+    font-size: 40px;
+    margin: 1px;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.button-box {
+    background-color: deepskyblue;
+    border: solid 2px slateblue;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.operator {
+    background-color: slateblue;
+    border: solid 2px deepskyblue;
+}
+
+.button-box:active {
+    background-color: slateblue;
+    color: ghostwhite;
+}
+
+.operator:active {
+    background-color: deepskyblue;
+}
+
+#dot,
+#reverse,
+.number {
+    flex: 1;
+}
+
+.double-wide {
+    flex: 2;
+}
+
+#clear {
+    flex: 3;
+}
